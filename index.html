@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FareIT-2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="./css/dev-index.css">
+    <link rel="stylesheet" type="text/css"  href="./css/modal.css">
+    <script type="text/javascript" src="./js/test.js"></script>
+</head>
+<body style="margin:0">
+    <!-- Header Section-->
+    <div class="total-head-section">
+         <div id="logo-section"></div>
+         <div id="content-section">
+          <ul id="point-section">
+              <li class="list-data"><a href="#about-fare">About FareIT</a></li>
+              <li class="list-data"><a href="#contact-section">Contact</a></li>
+              <li class="list-data"><a href="#events-section">Awards</a></li>
+              <li class="list-data"><a href="#">Team</a></li>
+          </ul>
+        </div>
+    </div>
+    <!--About FareIT Section-->
+    <div id="about-fare">
+      <div id="theme-area">
+          <div id="title-area">
+                <h2>ABOUT FAREIT2.0</h2>
+          </div>
+          <div id="content-area">
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+      </div>
+    </div>
+    <!--Awards Section -->
+    <div id="events-section">
+        <div id="major-event">
+                <div style="top:0px;padding-left:19rem;"><h1>Awards Ceremony</h1></div>
+        <div class="row-arrange">
+            <ul class="flex-bo">  
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!--Contact Section -- >
+          <div id="contact-section">
+              <div class=""></div>
+          </div>
+    <!-- Modal Section-->
+    <div class="modal" id="myModal">
+            <div  class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-head">Awards Ceremony</div>
+                <span class="close">&times;</span></div>
+                <div class="modal-body">
+                    <div class="modal-row" style="display:flex">
+                    <div class="modal-detail">We the juniors of IT department happy to announce the farewell for our seniors-FareIT2.0</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+<script>
+    var doc=document.getElementById("myModal");
+    var close=document.getElementsByClassName("close")[0];
+    function clearElement(ele){
+          while(ele.firstChild)
+                ele.removeChild(ele.firstChild);
+      }
+    close.onclick=function(){
+        let modalDataContent=document.getElementsByClassName("modal-detail")[0];
+           let modalDataHead=document.getElementsByClassName("modal-head")[0];
+           clearElement(modalDataContent);
+           clearElement(modalDataHead);
+        doc.style.display="none";
+    }
+
+</script>
+</html>
