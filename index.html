@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css"  href="./css/dev-index.css">
     <link rel="stylesheet" type="text/css"  href="./css/modal.css">
     <script type="text/javascript" src="./js/test.js"></script>
-</head>
+    </head>
 <body style="margin:0">
     <!-- Header Section-->
     <div class="total-head-section">
@@ -43,22 +43,27 @@
         </div>
     </div>
     </div>
-    <!--Contact Section -- >
+    <!--Alumni Section -->
+        <div id="contact-section">
+
+        </div>
           <!--Team Section -->
     <div id="team-section">
         <div class="team-area">
         <div class="team-name"><h2>Omega!</h2></div>
-    <div class="team-members">
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
-        <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div>
+    <!-- <div class="team-members"> -->
+        <!-- <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div> -->
+        <!-- <div class="team-no"><h3>Sathya Seelan P</h3><h4>Organiser</h4></div> -->
+        <!-- <div class="team-no"><h3>Yokesh A</h3><h4>Organiser</h4></div> -->
+        <!-- <div class="team-no"><h3>Nisanth R</h3><h4>Organiser</h4></div> -->
+        <!-- <div class="team-no"><h3>Nikhil Charu</h3><h4>Organiser</h4></div> -->
+        <!-- </div> -->
+        <div class="team-members-1">
+        <div class="team-no-1"><h3>Rama Krishnar M</h3><h4>Developer</h4></div>
+        </div>
+        <div class="team-members">
+        <div class="team-no"><h3>Loga Sanjai R</h3><h4>Designer</h4></div>
+        <div class="team-no"><h3>Syed Shahinsha I</h3><h4>Designer</h4></div>
     </div>
 </div>
    </div>
@@ -90,6 +95,10 @@
            clearElement(modalDataContent);
            clearElement(modalDataHead);
         doc.style.display="none";
+    }
+    window.onclick=function(event){
+     if(event.target==doc)
+           doc.style.display="none";
     }
 
 </script>

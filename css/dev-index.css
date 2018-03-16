@@ -37,7 +37,7 @@
     margin-left:30%;
 }
 .text-content{
-    color: white;
+    color: black;
 }
 #title-area{
     position:relative;
@@ -54,7 +54,7 @@
 #events-section{
   position: relative;
   z-index: 1;
-   height:400px;
+   height:4auto;
    background-color: #4f99b4;
 }
 .row-arrange{
@@ -71,6 +71,12 @@
    display: inline-block;
    padding-top:20px;
    font-size:1.3rem;
+}
+.award-list > p{
+    padding:0;
+    margin-top:0;
+    margin-left:45px;
+
 }
 .flex-bo{
 display:flex;
@@ -94,14 +100,28 @@ flex-wrap: wrap;
 
 .team-members{
     display: flex;
-    justify-content: flex-start;
-    width:80%;
+    justify-content:center;
+    width:68%;
     flex-wrap: wrap;
     margin-left:15%;
 }
+.team-members-1{
+  width:100%;
+}
+.team-no-1{
+    width:100%;
+}
+
 .team-no{
     width:20%;
 }
 .team-area{
     padding-top:20px;
+}
+/*Alumni CSS */
+#contact-section{
+    height:500px;
+    width:100%;
+    background-color: #aeb015;
+    margin-top: -20px;
 }

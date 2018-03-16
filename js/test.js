@@ -14,7 +14,8 @@ let award_detail=(function(){
                     awardmodalData.push({
                         name:awardData[sampleData].Name,
                         url:awardData[sampleData].vdurl,
-                        rname:awardData[sampleData].Realname
+                        rname:awardData[sampleData].Realname,
+                        imgurl:awardData[sampleData].imgurl
                     })
                 }
                 award_modal_detail.data=awardmodalData;
@@ -57,7 +58,12 @@ let award_detail=(function(){
         let createmodalcontent=document.getElementsByClassName("flex-bo")[0];
         let listcreation=document.createElement("li");
          listcreation.setAttribute("class","award-list");
-         listcreation.innerText=singleawarddata.name;
+         let para=document.createElement("p");
+         para.innerText=singleawarddata.name;
+         let imagedata=document.createElement("img");
+         imagedata.setAttribute("src",singleawarddata.imgurl);
+         listcreation.appendChild(imagedata);
+         listcreation.appendChild(para);
          awardlinkhandler=createlinkhandlerforawards(singleawarddata);
          listcreation.addEventListener('click',awardlinkhandler);
          createmodalcontent.appendChild(listcreation);
@@ -73,8 +79,17 @@ let award_detail=(function(){
     function init(){
           dataget().then(ProcessData).then(setUpDOMforlist);
     }
+    function nullid(){
+            let modalDataContent=document.getElementsByClassName("modal-detail")[0];
+            let modalDataHead=document.getElementsByClassName("modal-head")[0];
+            clearElement(modalDataContent);
+            clearElement(modalDataHead);
+            let modalWholeData=document.getElementById("myModal");
+            modalWholeData.style.display="none";
+    }
     init();
           return{
-              init
+              init,
+              nullid
           }
 })();
