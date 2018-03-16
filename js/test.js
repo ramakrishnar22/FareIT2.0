@@ -15,7 +15,8 @@ let award_detail=(function(){
                         name:awardData[sampleData].Name,
                         url:awardData[sampleData].vdurl,
                         rname:awardData[sampleData].Realname,
-                        imgurl:awardData[sampleData].imgurl
+                        imgurl:awardData[sampleData].imgurl,
+                        soundurl:awardData[sampleData].soundurl
                     })
                 }
                 award_modal_detail.data=awardmodalData;
@@ -64,6 +65,12 @@ let award_detail=(function(){
          imagedata.setAttribute("src",singleawarddata.imgurl);
          listcreation.appendChild(imagedata);
          listcreation.appendChild(para);
+         let sound=new Audio(singleawarddata.soundurl);
+         listcreation.addEventListener("mouseover",sound.play.bind(sound));
+         listcreation.addEventListener("mouseout",()=>{
+             sound.pause();
+             sound.currentTime=0;
+         })
          awardlinkhandler=createlinkhandlerforawards(singleawarddata);
          listcreation.addEventListener('click',awardlinkhandler);
          createmodalcontent.appendChild(listcreation);
