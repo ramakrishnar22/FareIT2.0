@@ -86,17 +86,8 @@ let award_detail=(function(){
     function init(){
           dataget().then(ProcessData).then(setUpDOMforlist);
     }
-    function nullid(){
-            let modalDataContent=document.getElementsByClassName("modal-detail")[0];
-            let modalDataHead=document.getElementsByClassName("modal-head")[0];
-            clearElement(modalDataContent);
-            clearElement(modalDataHead);
-            let modalWholeData=document.getElementById("myModal");
-            modalWholeData.style.display="none";
-    }
     init();
           return{
-              init,
-              nullid
+              init
           }
 })();
