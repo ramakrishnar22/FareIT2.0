@@ -82,6 +82,10 @@
     margin-left:45px;
     opacity:1;
 }
+.award-list > img{
+    height:146px;
+    width:137px;
+}
 .award-list:hover{
     opacity:1;
     animation: swing 1s ease;

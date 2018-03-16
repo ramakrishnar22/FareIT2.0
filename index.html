@@ -52,7 +52,7 @@
     <div id="team-section">
         <div class="team-area">
         <div class="team-name"><h2>Omega!</h2></div>
-    <!-- <div class="team-members"> -->
+        <!-- <div class="team-members"> -->
         <!-- <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div> -->
         <!-- <div class="team-no"><h3>Sathya Seelan P</h3><h4>Organiser</h4></div> -->
         <!-- <div class="team-no"><h3>Yokesh A</h3><h4>Organiser</h4></div> -->
@@ -100,8 +100,13 @@
         doc.style.display="none";
     }
     window.onclick=function(event){
-     if(event.target==doc)
+     if(event.target==doc){
+           let modalDataContent=document.getElementsByClassName("modal-detail")[0];
+           let modalDataHead=document.getElementsByClassName("modal-head")[0];
+           clearElement(modalDataContent);
+           clearElement(modalDataHead);
            doc.style.display="none";
+        }
     }
 
 </script>
