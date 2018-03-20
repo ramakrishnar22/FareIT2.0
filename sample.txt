@@ -1,0 +1,38 @@
+
+
+
+old one::::::::::::::::::::::::
+
+@keyframes swing{
+    15%{
+           transform: translateX(5px);
+           -ms-transform: translateX(5px);
+           -webkit-transform:translateX(5px);
+    }
+    30%{
+        transform:translateX(-5px);
+        -ms-transform:translateX(-5px);
+        -webkit-transform:translateX(-5px);
+
+    }
+    50%{
+        transform:translateX(3px);
+        -ms-transform:translateX(3px);
+        -webkit-transform:translateX(3px);
+    }
+    65%{
+        transform:translateX(-3px);
+        -ms-transform:translateX(-3px);
+        -webkit-transform:translateX(-3px);
+    }
+    80%{
+        transform:translateX(2px);
+        -ms-transform:translateX(2px);
+        -webkit-transform:translateX(2px);
+    }
+    100%{
+        transform:translateX(0px);
+        -ms-transform:translateX(0px);
+        -webkit-transform:translateX(0px);
+    }
+}
