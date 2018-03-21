@@ -5,7 +5,6 @@ let award_detail=(function(){
      function dataget(){
          return fetch('assets/awards/awards.json').then(response => response.json()); 
      }
-     init;
      function ProcessData(awardData){
         return new Promise((resolve,reject)=>{
             let awardmodalData=[];

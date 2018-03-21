@@ -1,134 +1,204 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FareIT-2.0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"  href="./css/dev-index.css">
-    <link rel="stylesheet" type="text/css"  href="./css/modal.css">
+    <link rel="stylesheet" type="text/css" href="./css/dev-index.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
     <script type="text/javascript" src="./js/test.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery-3.2.1.min.js"></script>
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="icon" href="favicon.ico">
-    </head>
+</head>
+
 <body>
+    <!-- Loader Section -->
     <div class="spinner-wrapper">
-            <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
+        <div class="spin-remover">
+        <div class="spinner">
+            <div class="double-bounce1 circle-adjuster"></div>
+            <div class="double-bounce2 circle-adjuster"></div>
+        </div>
+        <div id="data-confirm">
+            <p>Do you want to launch our FareIT2.0 website?</p>
+            <div class="button-spacer">
+            <button id="stoptogo">NO</button>
+                        <button id="gotowebsite">YES</button>
             </div>
-            <button id="gotowebsite">Yess</button>
-              </div>
+        </div>
+        </div>
+    </div>
     </div>
     <!-- Header Section-->
     <div class="total-head-section">
-         <div id="logo-section"></div>
-         <div id="content-section">
-          <ul id="point-section">
-              <li class="list-data"><a href="#about-fare">About FareIT</a></li>
-              <li class="list-data"><a href="#contact-section">Alumni</a></li>
-              <li class="list-data"><a href="#events-section">Awards</a></li>
-              <li class="list-data"><a href="#team-section">Team</a></li>
-          </ul>
+        <div id="logo-section"></div>
+        <div id="content-section">
+            <ul id="point-section">
+                <li class="list-data">
+                    <a href="#about-fare">About FareIT</a>
+                </li>
+                
+                <li class="list-data">
+                    <a href="#events-section">Awards</a>
+                </li>
+                <li class="list-data">
+                    <a href="#contact-section">Alumni</a>
+                </li>
+                <li class="list-data">
+                    <a href="#team-section">Team</a>
+                </li>
+            </ul>
         </div>
     </div>
     <!--About FareIT Section-->
     <div id="about-fare">
-      <div id="theme-area">
-          <div id="title-area">
+        <div id="theme-area">
+            <div id="title-area">
                 <h2 class="text-content">ABOUT FAREIT2.0</h2>
-          </div>
-          <div id="content-area">
-             <p class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-      </div>
+            </div>
+            <div id="content-area">
+                <p class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
     </div>
     <!--Awards Section -->
     <div id="events-section">
         <div id="major-event">
-                <div style="top:0px;padding-left:19rem;"><h1>Awards Ceremony</h1></div>
-        <div class="row-arrange">
-            <ul class="flex-bo">  
-            </ul>
+            <div style="top:0px;padding-left:19rem;">
+                <h1>Awards Ceremony</h1>
+            </div>
+            <div class="row-arrange">
+                <ul class="flex-bo">
+                </ul>
+            </div>
         </div>
-    </div>
     </div>
     <!--Alumni Section -->
-        <div id="contact-section">
+    <div id="contact-section">
 
-        </div>
-          <!--Team Section -->
+    </div>
+    <!--Team Section -->
     <div id="team-section">
         <div class="team-area">
-        <div class="team-name"><h2>Omega!</h2></div>
-        <!-- <div class="team-members"> -->
-        <!-- <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div> -->
-        <!-- <div class="team-no"><h3>Sathya Seelan P</h3><h4>Organiser</h4></div> -->
-        <!-- <div class="team-no"><h3>Yokesh A</h3><h4>Organiser</h4></div> -->
-        <!-- <div class="team-no"><h3>Nisanth R</h3><h4>Organiser</h4></div> -->
-        <!-- <div class="team-no"><h3>Nikhil Charu</h3><h4>Organiser</h4></div> -->
-        <!-- </div> -->
-        <div class="team-members-1">
-        <div class="team-no-1"><h3>Rama Krishnar M</h3><h4>Developer</h4></div>
-        </div>
-        <div class="team-members">
-        <div class="team-no"><h3>Loga Sanjai R</h3><h4>Designer</h4></div>
-        <div class="team-no"><h3>Syed Shahinsha I</h3><h4>Designer</h4></div>
-    </div>
-</div>
-   </div>
-    <!-- Modal Section-->
-    <div class="modal" id="myModal">
-            <div  class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-head">Awards Ceremony</div>
-                <span class="close">&times;</span></div>
-                <div class="modal-body">
-                    <div class="modal-row" style="display:flex">
-                    <div class="modal-detail">We the juniors of IT department happy to announce the farewell for our seniors-FareIT2.0</div>
-                    </div>
+            <div class="team-name">
+                <h2>Omega!</h2>
+            </div>
+            <!-- <div class="team-members"> -->
+            <!-- <div class="team-no"><h3>Rahul Sriram B</h3><h4>Organiser</h4></div> -->
+            <!-- <div class="team-no"><h3>Sathya Seelan P</h3><h4>Organiser</h4></div> -->
+            <!-- <div class="team-no"><h3>Yokesh A</h3><h4>Organiser</h4></div> -->
+            <!-- <div class="team-no"><h3>Nisanth R</h3><h4>Organiser</h4></div> -->
+            <!-- <div class="team-no"><h3>Nikhil Charu</h3><h4>Organiser</h4></div> -->
+            <!-- </div> -->
+            <div class="team-members-1">
+                <div class="team-no-1">
+                    <h3>Rama Krishnar M</h3>
+                    <h4>Developer</h4>
                 </div>
             </div>
+            <div class="team-members">
+                <div class="team-no">
+                    <h3>Loga Sanjai R</h3>
+                    <h4>Designer</h4>
+                </div>
+                <div class="team-no">
+                    <h3>Syed Shahinsha I</h3>
+                    <h4>Designer</h4>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <!-- Modal Section-->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-head">Awards Ceremony</div>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-row" style="display:flex">
+                    <div class="modal-detail">We the juniors of IT department happy to announce the farewell for our seniors-FareIT2.0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script>
-$(document).ready(function() {
-    //Preloader
-        $('#gotowebsite').on("click", function() {
-        preloaderFadeOutTime = 500;
-        function hidePreloader() {
-        var preloader = $('.spinner-wrapper');
-        preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-        });
-        });
-</script>
-<script>
-    var doc=document.getElementById("myModal");
-    var close=document.getElementsByClassName("close")[0];
-    function clearElement(ele){
-          while(ele.firstChild)
-                ele.removeChild(ele.firstChild);
-      }
-    close.onclick=function(){
-        let modalDataContent=document.getElementsByClassName("modal-detail")[0];
-           let modalDataHead=document.getElementsByClassName("modal-head")[0];
-           clearElement(modalDataContent);
-           clearElement(modalDataHead);
-        doc.style.display="none";
-    }
-    window.onclick=function(event){
-     if(event.target==doc){
-           let modalDataContent=document.getElementsByClassName("modal-detail")[0];
-           let modalDataHead=document.getElementsByClassName("modal-head")[0];
-           clearElement(modalDataContent);
-           clearElement(modalDataHead);
-           doc.style.display="none";
-        }
-    }
+    $(document).ready(function () {
+        $('#gotowebsite').on("click", function () {
+            preloaderFadeOutTime = 500;
+            
+            let ele= document.getElementsByClassName("spin-remover")[0];
+            console.log(ele.firstChild);
+                    while (ele.firstChild)
+                        ele.removeChild(ele.firstChild);
 
+            function hidePreloader() {
+                beginCountdown(function myCallback(){
+                    var preloader = $('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime); 
+                });  
+            }
+            hidePreloader();
+
+            function beginCountdown(countdownFinishedCallback) {
+                let count = 5;
+                let division = document.createElement("div");
+                let counter = document.createElement("p");
+                division.id="counter-div";
+                counter.id = "counter";
+                division.appendChild(counter);
+                let preloader = document.querySelector('.spin-remover');
+                preloader.appendChild(division);
+
+                function countdown(count) {
+                    counter.innerText = count;
+                    console.log(count)
+                    if(count == 0) {
+                        counter.innerText="Let's GO!";
+                        setTimeout(function(){},5000);
+                        countdownFinishedCallback();
+                    } else {
+                        count--;
+                        setTimeout(function(){ countdown(count) }, 2000);
+                    }
+                }
+                countdown(count);
+            }
+        });
+    });
+    var doc = document.getElementById("myModal");
+    var close = document.getElementsByClassName("close")[0];
+
+    function clearElement(ele) {
+        while (ele.firstChild)
+            ele.removeChild(ele.firstChild);
+    }
+    close.onclick = function () {
+        let modalDataContent = document.getElementsByClassName("modal-detail")[0];
+        let modalDataHead = document.getElementsByClassName("modal-head")[0];
+        clearElement(modalDataContent);
+        clearElement(modalDataHead);
+        doc.style.display = "none";
+    }
+    window.onclick = function (event) {
+        if (event.target == doc) {
+            let modalDataContent = document.getElementsByClassName("modal-detail")[0];
+            let modalDataHead = document.getElementsByClassName("modal-head")[0];
+            clearElement(modalDataContent);
+            clearElement(modalDataHead);
+            doc.style.display = "none";
+        }
+    }
 </script>
+
 </html>

@@ -23,21 +23,51 @@ html,body{
     z-index: 999999;
     }
     spinner-wrapper > button{
-        margin-left:50%;
-        
+        margin-left:50%;  
+    }
+    .circle-adjuster{
+         margin-left:50%;
     }
     .spinner {
         width: 100px;
         height: 100px;
         position: relative;
-        margin: 100px auto;
-        transform:rotate(45deg) translate(50%) rotate(-45deg);
-        animation: orbit 2s linear ease-in-out;
-
+        margin-top: 200px;
+        margin-left:500px;
       }
+      .button-spacer{
+          display:flex;
+          flex-direction: row;
+          flex:1;
+      }
+      .button-spacer button{
+          width:40%;
+          padding-left:0px;
+          padding-right:3px;
+      }
+      #data-confirm{
+        background-color: white;
+    width: 23%;
+    padding-left: 18px;
+    padding-top: 2px;
+    padding-bottom: 14px;
+    border-radius: 20px;
+    margin-left: 39%;
+      }
+   #counter-div{
+       margin-left:46%;
+       margin-top:23%;
+     }    
+     #counter{
+         color:white;
+         font-size:2rem;
+     }   
       @keyframes orbit{
           from{
-              
+              transform:rotate(0deg) translateX(200px);
+          }
+          to{
+              transform:rotate(360deg) translateX(200px);
           }
       }
       
@@ -51,28 +81,14 @@ html,body{
         top: 0;
         left: 0;
         color:white;
-        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-        animation: sk-bounce 2.0s infinite ease-in-out;
+        margin-left: 8rem;
+        margin-top: 6rem;
+        animation: orbit 4s linear infinite;
+        
       }
-      
       .double-bounce2 {
         -webkit-animation-delay: -3.0s;
         animation-delay: -3.0s;
-      }
-      
-      @-webkit-keyframes sk-bounce {
-        0%, 100% { -webkit-transform: scale(0.0) }
-        50% { -webkit-transform: scale(1.0) }
-      }
-      
-      @keyframes sk-bounce {
-        0%, 100% { 
-          transform: scale(0.0);
-          -webkit-transform: scale(0.0);
-        } 50% { 
-          transform: scale(1.0);
-          -webkit-transform: scale(1.0);
-        }
       }
     /* head section */
 .total-head-section{
