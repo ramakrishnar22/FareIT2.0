@@ -60,7 +60,7 @@ html,body{
      }    
      #counter{
          color:white;
-         font-size:2rem;
+         font-size:5rem;
      }   
       @keyframes orbit{
           from{
@@ -87,8 +87,8 @@ html,body{
         
       }
       .double-bounce2 {
-        -webkit-animation-delay: -3.0s;
-        animation-delay: -3.0s;
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
       }
     /* head section */
 .total-head-section{

@@ -37,7 +37,31 @@ let award_detail=(function(){
              vid.setAttribute("height","500px");
              vid.setAttribute("id","myvideo");
              vid.setAttribute("controls","");
-             vid.setAttribute("autoplay","");
+            // vid.setAttribute("autoplay","");
+            vid.addEventListener("click",()=>{
+               vid.paused?vid.play():vid.pause();   
+            });
+            vid.addEventListener("dblclick",()=>{
+                if(!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement){
+                if(vid.requestFullscreen){
+                vid.requestFullscreen();   
+                }else if (vid.webkitRequestFullscreen) {
+                    vid.webkitRequestFullscreen();
+                  }
+                }
+                else{
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                      } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                      } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                      } else if (document.webkitCancelFullScreen) {
+                        document.webkitCancelFullScreen();
+                      }
+                }
+             });
+             vid.setAttribute("poster","./assets/img/play.png");
              vid.setAttribute("type","video/webm")
              let souc=document.createElement("source");
              souc.setAttribute("src",awardobject.url);
@@ -73,7 +97,6 @@ let award_detail=(function(){
          awardlinkhandler=createlinkhandlerforawards(singleawarddata);
          listcreation.addEventListener('click',awardlinkhandler);
          createmodalcontent.appendChild(listcreation);
-
      }
      function createlinkhandlerforawards(singleawarddata){
            return function(event){

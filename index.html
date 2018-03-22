@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -40,7 +40,6 @@
                 <li class="list-data">
                     <a href="#about-fare">About FareIT</a>
                 </li>
-                
                 <li class="list-data">
                     <a href="#events-section">Awards</a>
                 </li>
@@ -138,7 +137,6 @@
             preloaderFadeOutTime = 500;
             
             let ele= document.getElementsByClassName("spin-remover")[0];
-            console.log(ele.firstChild);
                     while (ele.firstChild)
                         ele.removeChild(ele.firstChild);
 
@@ -162,14 +160,13 @@
 
                 function countdown(count) {
                     counter.innerText = count;
-                    console.log(count)
                     if(count == 0) {
                         counter.innerText="Let's GO!";
-                        setTimeout(function(){},5000);
+                        setTimeout(function(){console.log("done")},5000);
                         countdownFinishedCallback();
                     } else {
                         count--;
-                        setTimeout(function(){ countdown(count) }, 2000);
+                        setTimeout(function(){ countdown(count) }, 1000);
                     }
                 }
                 countdown(count);
@@ -178,7 +175,7 @@
     });
     var doc = document.getElementById("myModal");
     var close = document.getElementsByClassName("close")[0];
-
+    var control=document.getElementById("myvideo");
     function clearElement(ele) {
         while (ele.firstChild)
             ele.removeChild(ele.firstChild);
@@ -198,7 +195,14 @@
             clearElement(modalDataHead);
             doc.style.display = "none";
         }
+        if(event.target == control){
+            if(control.play()) 
+        control.pause();
+        else
+                control.play();
+        }
     }
+    
 </script>
 
 </html>
