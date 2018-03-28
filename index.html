@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,10 +22,9 @@
             <div class="double-bounce2 circle-adjuster"></div>
         </div>
         <div id="data-confirm">
-            <p>Do you want to launch our FareIT2.0 website?</p>
+            <p>Let's go to our website!</p>
             <div class="button-spacer">
-            <button id="stoptogo">NO</button>
-            <button id="gotowebsite">YES</button>
+            <button id="gotowebsite">Click to Go!</button>
             </div>
         </div>
         </div>
@@ -45,6 +43,9 @@
                 </li>
                 <li class="list-data">
                     <a href="#contact-section">Alumni</a>
+                </li>
+                <li class="list-data">
+                    <a href="#entertainment-section">Entertainment</a>
                 </li>
                 <li class="list-data">
                     <a href="#team-section">Team</a>
@@ -83,6 +84,10 @@
     <!--Alumni Section -->
     <div id="contact-section">
 
+    </div>
+    <!-- Entertainment Section -->
+    <div id="entertainment-section">
+                    
     </div>
     <!--Team Section -->
     <div id="team-section">
@@ -132,6 +137,7 @@
 
 </body>
 <script>
+    // JS for spinner and loader functionality
     $(document).ready(function () {
         $('#gotowebsite').on("click", function () {
             preloaderFadeOutTime = 500;
@@ -171,8 +177,10 @@
                 }
                 countdown(count);
             }
+            document.body.style.overflowY="scroll";
         });
     });
+    // JS for modal section functionality
     var doc = document.getElementById("myModal");
     var close = document.getElementsByClassName("close")[0];
     var control=document.getElementById("myvideo");
@@ -202,7 +210,11 @@
                 control.play();
         }
     }
-    
+    // JS for Entertainement Section
+    let clicker=document.querySelector(".clicker-tab .clicker-border-button");
+    clicker.onclick=function(){
+        location.href="https://playvids.com";
+    }
 </script>
 
 </html>

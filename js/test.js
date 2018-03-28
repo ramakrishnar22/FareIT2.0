@@ -15,7 +15,8 @@ let award_detail=(function(){
                         url:awardData[sampleData].vdurl,
                         rname:awardData[sampleData].Realname,
                         imgurl:awardData[sampleData].imgurl,
-                        soundurl:awardData[sampleData].soundurl
+                        soundurl:awardData[sampleData].soundurl,
+                        modalurl:awardData[sampleData].modalurl
                     })
                 }
                 award_modal_detail.data=awardmodalData;
@@ -37,7 +38,6 @@ let award_detail=(function(){
              vid.setAttribute("height","500px");
              vid.setAttribute("id","myvideo");
              vid.setAttribute("controls","");
-            // vid.setAttribute("autoplay","");
             vid.addEventListener("click",()=>{
                vid.paused?vid.play():vid.pause();   
             });
@@ -47,6 +47,9 @@ let award_detail=(function(){
                 vid.requestFullscreen();   
                 }else if (vid.webkitRequestFullscreen) {
                     vid.webkitRequestFullscreen();
+                  }
+                  else if(vid.mozRequestFullscreen){
+                      vid.mozRequestFullscreen();
                   }
                 }
                 else{
@@ -61,7 +64,7 @@ let award_detail=(function(){
                       }
                 }
              });
-             vid.setAttribute("poster","./assets/img/play.png");
+             vid.setAttribute("poster","./assets/img/modal.png");
              vid.setAttribute("type","video/webm")
              let souc=document.createElement("source");
              souc.setAttribute("src",awardobject.url);
@@ -102,6 +105,9 @@ let award_detail=(function(){
            return function(event){
                formatModalDetails(singleawarddata);
             let modalWholeData=document.getElementById("myModal");
+            modalWholeData.style.backgroundImage='url('+ singleawarddata.modalurl +')';
+            modalWholeData.style.backgroundSize='100%';
+            modalWholeData.style.backgroundPosition="fixed";
             modalWholeData.style.display="block";
            }
      }
